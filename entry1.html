@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absence of Heart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
+    
+    <style>
+        
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+
+        .images {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        .bodytext {
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards;
+        }
+
+        .footer-text img {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+
+
+        #text1-1 {
+            animation-delay: 0.5s;
+        }
+
+        #text1-2 {
+            animation-delay: 1s;
+        }
+
+        #text1-3 {
+            animation-delay: 1.5s;
+        }
+
+        #text1-4 {
+            animation-delay: 2s;
+        }
+
+        #text1-5 {
+            animation-delay: 2.5s;
+        }
+
+
+        #something {
+            animation-delay: 0.2s;
+        }
+
+        #window {
+            animation-delay: 0.4s;
+        }
+
+        #body {
+            animation-delay: 0.6s;
+        }
+
+        #door {
+            animation-delay: 0.8s;
+        }
+
+        #hear {
+            animation-delay: 1s;
+        }
+
+
+        .select-container, .concept-select {
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #00083B;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        
+        .title-container {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            z-index: 10;
+        }
+        
+        .footer-link {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            z-index: 10;
+            text-decoration: none;
+        }
+        
+        .footer-text img {
+            width: 85%;
+            height: auto;
+        }
+    
+
+        .bodytext {
+            position: absolute;
+            color: #DDDDEA;
+            font-family: Arial, sans-serif;
+            font-size: 1.1vw;
+            width: 19vw;
+            line-height: 0.9
+        }
+        
+        #text1-1 {
+            top: 13%;
+            right: 20%;
+        }
+        
+        #text1-2 {
+            top: 40%;
+            left: 20%;
+        }
+        
+        #text1-3 {
+            top: 50%;
+            right: 20%;
+        }
+        
+        #text1-4 {
+            bottom: 14%;
+            left: 20%;
+        }
+        
+        #text1-5 {
+            bottom: 10%;
+            right: 20%;
+        }
+
+        .images {
+            position: absolute;
+            
+        }
+        
+        /* IMAGES ARE BELOW             
+                          (˚ˎ 。7  
+                           |、˜〵          
+                          じしˍ,)ノ 
+        */
+
+        #window {
+            width: 23%;
+            top: 20%;
+            left: 3%;
+        }
+        
+        #door {
+            width: 23%;
+            bottom: 4%;
+            left: 3%;
+        }
+        
+        #hear {
+            width: 25%;
+            bottom: 4%;
+            right: 3%;
+        }
+        
+        #something {
+            width: 25%;
+            top: 10%;
+            right: 3%;
+        }
+        
+        #body {
+            width: 27%;
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%, -50%); /* Center the image exactly */
+        }
+
+
+        .select-container {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .concept-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: none;
+        color: #DDDDEA;
+        font-family: Arial, sans-serif;
+        font-size: 2.5vw;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    
+    .concept-select:focus {
+        outline: none;
+    }
+    
+   
+    .concept-select option {
+        background-color: #00083B;
+        color: #DDDDEA;
+        padding: 5px;
+    }
+
+    .select-container {
+    display: inline-block;
+    position: relative;
+}
+
+.concept-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    color: #DDDDEA;
+    font-family: Arial, sans-serif;
+    font-size: 1vw; /* Changed from 2.5vw to match bodytext */
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.concept-select:focus {
+    outline: none;
+}
+
+.concept-select option {
+    background-color: #00083B;
+    color: #DDDDEA;
+    padding: 5px;
+}
+    </style>
+</head>
+
+<body>
+
+   
+    <img src="assets/door.jpeg" alt="door" class="images" id="something">
+
+    <img src="assets/hear.jpeg" alt="hear" class="images" id="window">
+    
+    <img src="assets/mind.jpeg" alt="mind" class="images" id="body">
+
+    <img src="assets/reach.jpg" alt="reach" class="images" id="door">
+    
+    <img src="assets/dread.jpeg" alt="dread" class="images" id="hear">
+
+
+
+    
+    <a href="index.html" class="footer-link">
+        <div class="footer-text">
+            <img src="assets/TITLE.png" alt="title">
+        </div>
+    </a>
+    
+    <div id="phase1"> 
+        <div class="bodytext" id="text1-1">
+            can something
+            <!-- <span class="select-container">
+                <select id="span1" class="concept-select" name="concept">
+                    <option value="" selected hidden>something</option>
+                    <option value="something">something</option>
+                    <option value="object">an object</option>
+                </select>
+            </span> -->
+            be missed if you are aware of its place in the world? can you miss the voice of one when all you need is to open a &nbsp; &nbsp;
+            <span class="select-container">
+                <select id="span1" class="concept-select" name="concept">
+                    <option value="door" selected hidden>door</option>
+                    <option value="door">door</option>
+                    <option value="window">window</option>
+                </select>
+            </span> to hear it once again?
+        </div>
+        
+        <div class="bodytext" id="text1-2">
+            many things exist everywhere at once <br>and yet in the end we only miss what we cannot  
+            <span class="select-container">
+                <select id="span2" class="concept-select" name="concept">
+                    <option value="door" selected hidden>feel.</option>
+                    <option value="door">feel.</option>
+                    <option value="window">hear.</option>
+                </select>
+            </span>
+        </div>
+        
+        <div class="bodytext" id="text1-3">
+            every form of distance whether <span class="select-container">
+                <select id="span3" class="concept-select" name="concept">
+                    <option value="door" selected hidden>mind or body</option>
+                    <option value="door">mind or body</option>
+                    <option value="window">body or mind</option>
+                </select>
+            </span> makes these experiences much more poignant therefore that more missed.
+        </div>
+        
+        <div class="bodytext" id="text1-4">
+            what we miss becomes something unaccessible compared to what we once had before. we only miss what we now feel is out of 
+            <select id="span4" class="concept-select" name="concept">
+                <option value="door" selected hidden>reach.</option>
+                <option value="door">grasp.</option>
+                <option value="window">reach.</option>
+            </select>
+        </div>
+
+        <div class="bodytext" id="text1-5">
+            we are the same as a man who has the capability to have everything feeling a sense of 
+            <select id="span5" class="concept-select" name="concept">
+                <option value="door" selected hidden>dread.</option>
+                <option value="door">dread.</option>
+                <option value="window">grief.</option>
+            </select>
+        </div>
+    </div>
+
+
+    <script src= "script.js" async defer> </script>
+
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absence of Heart</title>
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #00083B;
+            overflow: hidden;
+        }
+        
+        .footer-link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            text-decoration: none;
+        }
+        
+        
+        .footer-text img {
+            opacity: 0; 
+            animation: fadeIn 2s ease-in forwards; 
+        }
+        
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="entry1.html" class="footer-link">
+        <div class="footer-text">
+            <img src="assets/TITLE.png" alt="title">
+        </div>
+    </a>
+</body>
+</html>
+
+
