@@ -10,14 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
     
     <style>
-        
-
-
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
 
         .images {
             opacity: 0;
@@ -33,7 +29,6 @@
             opacity: 0;
             animation: fadeIn 1.5s ease-in forwards;
         }
-
 
         #text1-1 {
             animation-delay: 0.5s;
@@ -55,7 +50,6 @@
             animation-delay: 2.5s;
         }
 
-
         #something {
             animation-delay: 0.2s;
         }
@@ -75,7 +69,6 @@
         #hear {
             animation-delay: 1s;
         }
-
 
         .select-container, .concept-select {
             opacity: 0;
@@ -112,7 +105,6 @@
             height: auto;
         }
     
-
         .bodytext {
             position: absolute;
             color: #DDDDEA;
@@ -149,7 +141,6 @@
 
         .images {
             position: absolute;
-            
         }
         
         /* IMAGES ARE BELOW             
@@ -187,87 +178,53 @@
             position: absolute;
             top: 50%;
             left: 53%;
-            transform: translate(-50%, -50%); /* Center the image exactly */
+            transform: translate(-50%, -50%); 
         }
 
-
         .select-container {
-        display: inline-block;
-        position: relative;
-    }
+            display: inline-block;
+            position: relative;
+        }
     
-    .concept-select {
-        appearance: none;
-        -webkit-appearance: none;
-        background-color: transparent;
-        border: none;
-        color: #DDDDEA;
-        font-family: Arial, sans-serif;
-        font-size: 2.5vw;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-        width: auto;
-    }
+        .concept-select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: none;
+            color: #DDDDEA;
+            font-family: Arial, sans-serif;
+            font-size: 1vw;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            width: auto;
+            font-style: italic; 
+            text-decoration: underline;
+        }
     
-    .concept-select:focus {
-        outline: none;
-    }
+        .concept-select:focus {
+            outline: none;
+        }
     
-   
-    .concept-select option {
-        background-color: #00083B;
-        color: #DDDDEA;
-        padding: 5px;
-    }
+        .concept-select option {
+            background-color: #00083B;
+            color: #DDDDEA;
+            padding: 5px;
+            font-style: italic; 
+            text-decoration: underline;
+        }
 
-    .select-container {
-    display: inline-block;
-    position: relative;
-}
-
-.concept-select {
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: none;
-    color: #DDDDEA;
-    font-family: Arial, sans-serif;
-    font-size: 1vw; /* Changed from 2.5vw to match bodytext */
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    width: auto;
-}
-
-.concept-select:focus {
-    outline: none;
-}
-
-.concept-select option {
-    background-color: #00083B;
-    color: #DDDDEA;
-    padding: 5px;
-}
+        
     </style>
 </head>
 
 <body>
-
-   
     <img src="assets/door.jpeg" alt="door" class="images" id="something">
-
     <img src="assets/hear.jpeg" alt="hear" class="images" id="window">
-    
     <img src="assets/mind.jpeg" alt="mind" class="images" id="body">
-
     <img src="assets/reach.jpg" alt="reach" class="images" id="door">
-    
     <img src="assets/dread.jpeg" alt="dread" class="images" id="hear">
 
-
-
-    
     <a href="index.html" class="footer-link">
         <div class="footer-text">
             <img src="assets/TITLE.png" alt="title">
@@ -276,15 +233,7 @@
     
     <div id="phase1"> 
         <div class="bodytext" id="text1-1">
-            can something
-            <!-- <span class="select-container">
-                <select id="span1" class="concept-select" name="concept">
-                    <option value="" selected hidden>something</option>
-                    <option value="something">something</option>
-                    <option value="object">an object</option>
-                </select>
-            </span> -->
-            be missed if you are aware of its place in the world? can you miss the voice of one when all you need is to open a &nbsp; &nbsp;
+            can something be missed if you are aware of its place in the world? can you miss the voice of one when all you need is to open a &nbsp; &nbsp;
             <span class="select-container">
                 <select id="span1" class="concept-select" name="concept">
                     <option value="door" selected hidden>door</option>
@@ -317,26 +266,28 @@
         
         <div class="bodytext" id="text1-4">
             what we miss becomes something unaccessible compared to what we once had before. we only miss what we now feel is out of 
-            <select id="span4" class="concept-select" name="concept">
-                <option value="door" selected hidden>reach.</option>
-                <option value="door">grasp.</option>
-                <option value="window">reach.</option>
-            </select>
+            <span class="select-container">
+                <select id="span4" class="concept-select" name="concept">
+                    <option value="door" selected hidden>reach.</option>
+                    <option value="door">grasp.</option>
+                    <option value="window">reach.</option>
+                </select>
+            </span>
         </div>
 
         <div class="bodytext" id="text1-5">
             we are the same as a man who has the capability to have everything feeling a sense of 
-            <select id="span5" class="concept-select" name="concept">
-                <option value="door" selected hidden>dread.</option>
-                <option value="door">dread.</option>
-                <option value="window">grief.</option>
-            </select>
+            <span class="select-container">
+                <select id="span5" class="concept-select" name="concept">
+                    <option value="door" selected hidden>dread.</option>
+                    <option value="door">dread.</option>
+                    <option value="window">grief.</option>
+                </select>
+            </span>
         </div>
     </div>
 
-
     <script src= "script.js" async defer> </script>
-
 </body>
 </html>
 
